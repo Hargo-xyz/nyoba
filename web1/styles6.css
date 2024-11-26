@@ -1,0 +1,211 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Animasi */
+@keyframes animasiatas {
+  from {
+    transform: translateY(-5rem);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes animasikanan {
+  from {
+    transform: translateX(5rem);
+    opacity: 0;
+  }
+  to {
+    opaccity: 1;
+  }
+}
+@keyframes animasikiri {
+  from {
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+  to {
+    opaccity: 1;
+  }
+}
+@keyframes animasibawah {
+  from {
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body {
+  background-color: #eee;
+}
+/* Navbar */
+.navbar {
+  height: 5rem;
+  width: 100%;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+.navbar h2 {
+  font-size: 2.5rem;
+}
+.navbar span {
+  color: #476072;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+.navbar ul li a {
+  color: #334257;
+  text-decoration: none;
+  margin: 3rem;
+  padding-bottom: 0.7rem;
+  font-weight: 500;
+  border-bottom: 1px solid #548ca800;
+  transition: all;
+  transition-duration: 0.3s;
+}
+.navbar ul li a:hover {
+  border-bottom: 1px solid #548ca8;
+  color: #548ca8;
+}
+
+/* Landing Section */
+
+.landing {
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing section h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+}
+.landing section span {
+  color: #548ca8;
+  text-shadow: 0.2rem 0.2rem 0.9rem rgb(57, 133, 204);
+}
+.landing section p {
+  margin: 3rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+/*  About */
+.about {
+  width: 50%;
+  height: 40rem;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about h1{
+  text-align: center;
+  align-self: flex-start;
+  margin-top: 5rem;
+  font-size: 3rem;
+}
+.about h1 span{
+  color: #548ca8;
+}
+.about .bgp {
+  background-color: #476072;
+  width: 50rem;
+  height: 10rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0.2rem 0.5rem 10rem grey;
+}
+.about .bgp p{
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  margin: 1rem;
+}
+
+/* Skills */
+.bungkus{
+  background: linear-gradient(#eee, #425c79 100%);
+}
+  .judul{
+  margin-top: 3.5rem;
+}
+.judul h1{
+text-align: center;
+font-size: 3rem;
+font-weight: 700;
+margin-bottom: 3rem;
+}
+.judul h1 span{
+  color: #548ca8;
+}
+.skill{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.skill .box img{
+  max-width: 13rem;
+  border-radius: 10% 13% 10%;
+  margin-top: 1rem;
+}
+.skill .box{
+  width: 15rem;
+  height: 25rem;
+  background-color: #476072;
+  border-radius: 10% 13% 10% ;
+  margin: 2rem 0rem;
+  box-shadow: 0.5rem 0.5rem 1rem #0B1B32;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transition: all;
+  transition-duration: 0.3s;
+}
+.skill .box p{
+  color: white;
+  margin: 2rem;
+  font-weight: 500;
+}
+.skill .box:hover{
+  cursor: pointer;
+  scale: 1.1;
+}
+
+/* Contact */
+footer{
+  height: 7rem;
+  background-color: #425c79;
+}
+footer .foot ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+footer .foot ul li{
+  margin: 1rem 2rem;
+}
+footer .foot ul li a{
+  text-decoration: none;
+  color: black;
+}
+footer .foot p{
+  text-align: center;
+  font-weight: 400;
+}
+
